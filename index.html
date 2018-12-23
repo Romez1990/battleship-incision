@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Battleship</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="app-wrapper">
+	<div id="app">
+		<div id="start">
+			<input type="text" placeholder="Введите имя" id="nameInput">
+			<input type="button" id="start-button" value="Пуск">
+		</div>
+		
+		<div id="game" style="display: none">
+			<header>
+				<ul>
+					<li id="nameGame">Имя</li>
+					<li id="score">Очки: 0</li>
+					<li id="time">Время: 00:00</li>
+					<li id="pause">Пауза</li>
+				</ul>
+			</header>
+			
+			<main>
+				<div id="sight"><div id="cross"></div></div>
+				<div id="ships"></div>
+				<div id="torpedoes"></div>
+			</main>
+		</div>
+		
+		<div id="pause-screen" style="display: none">Продолжить игру</div>
+	</div>
+</div>
+
+</body>
+</html>
